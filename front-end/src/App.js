@@ -1,9 +1,9 @@
-import { Routes } from './Routes';
+import { AppRoutes } from './Routes';
 
 export const App = () => {
     return (
         <div className="page-container">
-            <Routes />
+            <AppRoutes />
         </div>
     );
 }

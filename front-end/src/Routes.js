@@ -1,14 +1,14 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { LogInPage } from './pages/LogInPage';
 import { UserInfoPage } from './pages/UserInfoPage';
 
-export const Routes = () => {
+export const AppRoutes = () => {
     return (
         <Router>
-            <Switch>
-                <Route path="/" exact>
-                    <UserInfoPage />
-                </Route>
-            </Switch>
+            <Routes>
+                <Route path="/" element={<UserInfoPage />} />
+                <Route path="/login" element={<LogInPage />} />
+            </Routes>
         </Router>
     );
 }
